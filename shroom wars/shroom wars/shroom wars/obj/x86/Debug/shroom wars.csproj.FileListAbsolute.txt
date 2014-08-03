@@ -1,0 +1,11 @@
+c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\grass.xnb
+c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\bin\x86\Debug\shroom wars.exe
+c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\bin\x86\Debug\shroom wars.pdb
+c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\obj\x86\Debug\shroom wars.csprojResolveAssemblyReference.cache
+c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\obj\x86\Debug\shroom wars.exe
+c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\obj\x86\Debug\shroom wars.pdb
+c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\village.xnb
+c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\guy.xnb
+c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\dirt.xnb
+C:\Users\Kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\font0.xnb
