@@ -1,0 +1,17 @@
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\bin\Windows Phone\Debug\Shroom Wars.dll
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\bin\Windows Phone\Debug\Shroom Wars.pdb
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\obj\Windows Phone\Debug\Shroom Wars.csprojResolveAssemblyReference.cache
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\obj\Windows Phone\Debug\Shroom Wars.dll
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\obj\Windows Phone\Debug\Shroom Wars.pdb
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\bin\Windows Phone\Debug\Shroom Wars.xap
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\bin\Windows Phone\Debug\Content\dirt.xnb
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\bin\Windows Phone\Debug\Content\font0.xnb
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\bin\Windows Phone\Debug\Content\grass.xnb
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\bin\Windows Phone\Debug\Content\guy.xnb
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\Windows Phone\Shroom Wars\Shroom Wars\Shroom Wars\bin\Windows Phone\Debug\Content\village.xnb
