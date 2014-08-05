@@ -5,9 +5,9 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace shroom_wars
 {
-    class guy
+    class Guy
     {
-        public static List<guy> guys = new List<guy>();
+        public static List<Guy> guys = new List<Guy>();
 
         public Village destination;
         public Vector2 pos;
@@ -18,7 +18,7 @@ namespace shroom_wars
         private Vector2 start;
         private Vector2 offset;
 
-        public guy(Vector2 pos, Village dest, Color col, Vector2 offset)
+        public Guy(Vector2 pos, Village dest, Color col, Vector2 offset)
         {
             this.pos = pos;
             this.destination = dest;
@@ -31,8 +31,8 @@ namespace shroom_wars
 
         public static void Update(GameTime time)
         {
-            List<guy> remove = new List<guy>();
-            foreach (guy g in guys)
+            List<Guy> remove = new List<Guy>();
+            foreach (Guy g in guys)
             {
                 g.timer += (float)time.ElapsedGameTime.TotalSeconds;
                 g.pos = Vector2.Lerp(g.start, g.destination.position + g.offset, g.timer / g.time);
@@ -54,7 +54,7 @@ namespace shroom_wars
                 }
             }
 
-            foreach (guy g in remove)
+            foreach (Guy g in remove)
             {
                 guys.Remove(g);
             }
@@ -62,7 +62,7 @@ namespace shroom_wars
 
         public static void Draw(SpriteBatch spriteBatch)
         {
-            foreach (guy g in guys)
+            foreach (Guy g in guys)
             {
                 spriteBatch.Draw(Main.guyTexture, g.pos, null, g.color, 0f, new Vector2(Main.guyTexture.Width * .5f, Main.guyTexture.Height), 1f, SpriteEffects.None, (Main.screenHeight - g.pos.Y) / (float)Main.screenHeight);
             }

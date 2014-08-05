@@ -8,6 +8,13 @@ using Microsoft.Xna.Framework.Media;
 
 namespace shroom_wars
 {
+    public enum gameState
+    {
+        mainMenu,
+        storyMap,
+        inGame
+    }
+
     public class Main : Game
     {
         GraphicsDeviceManager graphics;
@@ -21,6 +28,8 @@ namespace shroom_wars
         public static Texture2D villageTexture;
         public static Texture2D dirtTexture;
         public static SpriteFont font0;
+
+        public static gameState gameState = gameState.mainMenu;
 
         public Main()
         {
@@ -46,10 +55,6 @@ namespace shroom_wars
             villageTexture = Content.Load<Texture2D>("village");
             guyTexture = Content.Load<Texture2D>("guy");
             font0 = Content.Load<SpriteFont>("font0");
-
-            Village v1 = new Village(new Vector2(screenWidth * .25f, screenHeight * .3f), 1, Color.Blue, 10);
-            Village v2 = new Village(new Vector2(screenWidth * .75f, screenHeight * .6f), 2, Color.Green, 10);
-            Village v3 = new Village(new Vector2(screenWidth * .9f, screenHeight * .6f), 2, Color.Green, 10);
         }
 
         protected override void UnloadContent()
@@ -60,13 +65,8 @@ namespace shroom_wars
         protected override void Update(GameTime gameTime)
         {
             Village.Update(gameTime);
-            guy.Update(gameTime);
+            Guy.Update(gameTime);
 
-            if (Keyboard.GetState().IsKeyDown(Keys.Space))
-            {
-                Village.villages[1].sendPeople(Village.villages[0]);
-                Village.villages[2].sendPeople(Village.villages[0]);
-            }
             base.Update(gameTime);
         }
 
@@ -74,20 +74,32 @@ namespace shroom_wars
         {
             GraphicsDevice.Clear(Color.Black);
 
-            spriteBatch.Begin();
-            for (int x = 0; x < screenWidth; x += grassTexture.Width)
+            switch (gameState)
             {
-                for (int y = 0; y < screenWidth; y += grassTexture.Width)
-                {
-                    spriteBatch.Draw(grassTexture, new Rectangle(x, y, 64, 64), null, Color.White);
-                }
-            }
-            spriteBatch.End();
+                case gameState.mainMenu:
+                    {
 
-            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            Village.Draw(spriteBatch);
-            guy.Draw(spriteBatch);
-            spriteBatch.End();
+                        break;
+                    }
+                case gameState.inGame:
+                    {
+                        spriteBatch.Begin();
+                        for (int x = 0; x < screenWidth; x += grassTexture.Width)
+                        {
+                            for (int y = 0; y < screenWidth; y += grassTexture.Width)
+                            {
+                                spriteBatch.Draw(grassTexture, new Rectangle(x, y, 64, 64), null, Color.White);
+                            }
+                        }
+                        spriteBatch.End();
+
+                        spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+                        Village.Draw(spriteBatch);
+                        Guy.Draw(spriteBatch);
+                        spriteBatch.End();
+                        break;
+                    }
+            }
 
             base.Draw(gameTime);
         }

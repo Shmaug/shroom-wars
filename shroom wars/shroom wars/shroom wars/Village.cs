@@ -37,7 +37,7 @@ namespace shroom_wars
                 if (this.guys - 1 >= 0)
                 {
                     Vector2 off = new Vector2(r.Next(-100, 100), r.Next(-100, 100));
-                    new guy(this.position + off, dest, this.color, off);
+                    new Guy(this.position + off, dest, this.color, off);
                     this.guys--;
                 }
                 else
