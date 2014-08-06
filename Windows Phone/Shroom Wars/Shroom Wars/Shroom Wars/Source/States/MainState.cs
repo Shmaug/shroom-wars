@@ -13,8 +13,14 @@ namespace Shroom_Wars
 {
     public class GameState : State
     {
+        int stage = -1;
+        List<Stage> stages;
+
         public GameState(GraphicsDeviceManager g, ContentManager c, Viewport v) : base(g, c, v)
         {
+            stages = new List<Stage>();
+            Stage stage1 = new Stage(g, c, v);
+            stages.Add(stage1);
         }
 
         public override void Initialize()
@@ -27,7 +33,10 @@ namespace Shroom_Wars
 
         public override State Update(GameTime gameTime)
         {
-            return this;
+            if (stage == -1)
+                return this;
+            else
+                return stages.ElementAt(stage);
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
