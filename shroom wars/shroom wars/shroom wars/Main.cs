@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
@@ -12,7 +13,8 @@ namespace shroom_wars
     {
         mainMenu,
         storyMap,
-        inGame
+        inGame,
+        mapCompleted
     }
 
     public class Main : Game
@@ -27,7 +29,9 @@ namespace shroom_wars
         public static Texture2D guyTexture;
         public static Texture2D villageTexture;
         public static Texture2D dirtTexture;
-        public static SpriteFont font0;
+        public static Texture2D circleTexture;
+
+        public static SpriteFont[] fonts = new SpriteFont[4];
 
         public static gameState gameState = gameState.mainMenu;
 
@@ -50,11 +54,28 @@ namespace shroom_wars
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            grassTexture = Content.Load<Texture2D>("grass");
-            dirtTexture = Content.Load<Texture2D>("dirt");
-            villageTexture = Content.Load<Texture2D>("village");
-            guyTexture = Content.Load<Texture2D>("guy");
-            font0 = Content.Load<SpriteFont>("font0");
+            grassTexture = Content.Load<Texture2D>("tex/grass");
+            dirtTexture = Content.Load<Texture2D>("spr/dirt");
+            villageTexture = Content.Load<Texture2D>("spr/village");
+            guyTexture = Content.Load<Texture2D>("spr/guy");
+            circleTexture = Content.Load<Texture2D>("ui/circle");
+
+            for (int i = 0; i < fonts.Length; i++)
+                fonts[i] = Content.Load<SpriteFont>("fon/font" + i);
+
+            #region maps
+            List<Village> v1 = new List<Village>();
+            v1.Add(new Village(new Vector2(100, 100), 1, Color.Red, 10));
+            v1.Add(new Village(new Vector2(300, 100), 1, Color.Blue, 10));
+            Map.maps.Add(new Map(new Vector2(100, 100), v1));
+
+            List<Village> v2 = new List<Village>();
+            v2.Add(new Village(new Vector2(50, 100), 1, Color.Red, 10));
+            v2.Add(new Village(new Vector2(150, 100), 1, Color.Red, 10));
+            v2.Add(new Village(new Vector2(300, 100), 1, Color.Blue, 10));
+
+            Map.maps.Add(new Map(new Vector2(100, 100), v2));
+            #endregion
         }
 
         protected override void UnloadContent()
@@ -64,9 +85,29 @@ namespace shroom_wars
 
         protected override void Update(GameTime gameTime)
         {
-            Village.Update(gameTime);
-            Guy.Update(gameTime);
-
+            Input.Update();
+            switch (gameState)
+            {
+                case gameState.mainMenu:
+                    {
+                        if (Input.currentPress && !Input.lastPress)
+                        {
+                            gameState = gameState.storyMap;
+                        }
+                        break;
+                    }
+                case gameState.storyMap:
+                    {
+                        Map.drawMaps(spriteBatch);
+                        break;
+                    }
+                case gameState.inGame:
+                    {
+                        Village.Update(gameTime);
+                        Guy.Update(gameTime);
+                        break;
+                    }
+            }
             base.Update(gameTime);
         }
 
@@ -74,16 +115,24 @@ namespace shroom_wars
         {
             GraphicsDevice.Clear(Color.Black);
 
+            spriteBatch.Begin();
             switch (gameState)
             {
                 case gameState.mainMenu:
                     {
-
+                        spriteBatch.DrawString(fonts[1], "Tap anywhere to start", new Vector2(screenWidth, screenHeight) * .5f, Color.White, 0f, fonts[1].MeasureString("Tap anywhere to start") * .5f, 1f, SpriteEffects.None, 0f);
+                        break;
+                    }
+                case gameState.storyMap:
+                    {
+                        spriteBatch.End();
+                        Map.drawMaps(spriteBatch);
+                        spriteBatch.Begin();
                         break;
                     }
                 case gameState.inGame:
                     {
-                        spriteBatch.Begin();
+                        // draw ground
                         for (int x = 0; x < screenWidth; x += grassTexture.Width)
                         {
                             for (int y = 0; y < screenWidth; y += grassTexture.Width)
@@ -93,13 +142,14 @@ namespace shroom_wars
                         }
                         spriteBatch.End();
 
+                        // draw game objects in order of bottom to top
                         spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
                         Village.Draw(spriteBatch);
                         Guy.Draw(spriteBatch);
-                        spriteBatch.End();
                         break;
                     }
             }
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

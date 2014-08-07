@@ -9,3 +9,18 @@ c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shr
 c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\guy.xnb
 c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\dirt.xnb
 C:\Users\Kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\font0.xnb
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\tex\grass.xnb
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\spr\village.xnb
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\spr\guy.xnb
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\spr\dirt.xnb
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\fon\font0.xnb
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\ui\circle.xnb
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\fon\font1.xnb
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\fon\font2.xnb
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\fon\font3.xnb
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\shroom wars.exe
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\shroom wars.pdb
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\obj\x86\Debug\shroom wars.csprojResolveAssemblyReference.cache
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\obj\x86\Debug\shroom wars.exe
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\obj\x86\Debug\shroom wars.pdb

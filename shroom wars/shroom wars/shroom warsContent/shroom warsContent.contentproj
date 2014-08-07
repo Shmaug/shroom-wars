@@ -42,36 +42,60 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="grass.png">
+    <Compile Include="tex\grass.png">
       <Name>grass</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="village.png">
+    <Compile Include="spr\village.png">
       <Name>village</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="guy.png">
+    <Compile Include="spr\guy.png">
       <Name>guy</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dirt.png">
+    <Compile Include="spr\dirt.png">
       <Name>dirt</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="font0.bmp">
+    <Compile Include="fon\font0.bmp">
       <Name>font0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ui\circle.png">
+      <Name>circle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fon\font1.bmp">
+      <Name>font1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+    </Compile>
+    <Compile Include="fon\font2.bmp">
+      <Name>font2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+    </Compile>
+    <Compile Include="fon\font3.bmp">
+      <Name>font3</Name>
       <Importer>TextureImporter</Importer>
       <Processor>FontTextureProcessor</Processor>
     </Compile>

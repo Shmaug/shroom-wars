@@ -1,5 +1,9 @@
-Content\grass.xnb
-Content\village.xnb
-Content\guy.xnb
-Content\dirt.xnb
-Content\font0.xnb
+Content\tex\grass.xnb
+Content\spr\village.xnb
+Content\spr\guy.xnb
+Content\spr\dirt.xnb
+Content\fon\font0.xnb
+Content\ui\circle.xnb
+Content\fon\font1.xnb
+Content\fon\font2.xnb
+Content\fon\font3.xnb

@@ -34,26 +34,28 @@ namespace shroom_wars
             List<Guy> remove = new List<Guy>();
             foreach (Guy g in guys)
             {
+                // move across screen, speed based off time
                 g.timer += (float)time.ElapsedGameTime.TotalSeconds;
                 g.pos = Vector2.Lerp(g.start, g.destination.position + g.offset, g.timer / g.time);
                 if (g.timer >= g.time)
                 {
+                    // remove from screen when gets to destination
                     remove.Add(g);
                     if (g.destination.color == g.color)
-                        g.destination.guys++;
+                        g.destination.guys++; // add to village if friendly
                     else
                     {
                         if (g.destination.guys > 0)
-                            g.destination.guys--;
+                            g.destination.guys--; // remove guy from village if enemy
                         else
                         {
-                            g.destination.color = g.color;
+                            g.destination.color = g.color; // flip village if village is empty and belongs to enemy
                             g.destination.guys++;
                         }
                     }
                 }
             }
-
+            // remove guys from list
             foreach (Guy g in remove)
             {
                 guys.Remove(g);
@@ -64,6 +66,7 @@ namespace shroom_wars
         {
             foreach (Guy g in guys)
             {
+                // I hope I don't have to explain this
                 spriteBatch.Draw(Main.guyTexture, g.pos, null, g.color, 0f, new Vector2(Main.guyTexture.Width * .5f, Main.guyTexture.Height), 1f, SpriteEffects.None, (Main.screenHeight - g.pos.Y) / (float)Main.screenHeight);
             }
         }
