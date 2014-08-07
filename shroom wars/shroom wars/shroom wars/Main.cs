@@ -43,6 +43,15 @@ namespace shroom_wars
             graphics.PreferredBackBufferHeight = screenHeight;
             graphics.PreferMultiSampling = true;
             this.IsMouseVisible = true;
+            try
+            {
+                IntPtr hWnd = this.Window.Handle;
+                var control = System.Windows.Forms.Control.FromHandle(hWnd);
+                var form = control.FindForm();
+                form.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                form.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            }
+            catch { }
         }
 
         protected override void Initialize()
