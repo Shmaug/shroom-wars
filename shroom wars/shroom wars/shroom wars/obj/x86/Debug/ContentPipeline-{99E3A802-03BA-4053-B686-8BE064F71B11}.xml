@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\ui\circle.xnb</Output>
-      <Time>2014-08-05T15:52:26.5238237-07:00</Time>
+      <Time>2014-08-06T23:15:18.4057252-07:00</Time>
     </Item>
     <Item>
       <Source>fon\font1.bmp</Source>
@@ -81,6 +81,15 @@
       <Options>None</Options>
       <Output>C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\fon\font3.xnb</Output>
       <Time>2014-08-05T21:18:12.5661904-07:00</Time>
+    </Item>
+    <Item>
+      <Source>ui\map.png</Source>
+      <Name>ui\map</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\ui\map.xnb</Output>
+      <Time>2014-08-06T23:21:08.4936436-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

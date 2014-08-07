@@ -15,12 +15,17 @@ namespace shroom_wars
         public static bool currentPress;
         public static bool lastPress;
 
-        public static void Update()
+        public static void UpdateBefore()
+        {
+            currentPress = Mouse.GetState().LeftButton == ButtonState.Pressed;
+            if (currentPress)
+                currentPos = new Vector2(Mouse.GetState().X, Mouse.GetState().Y);
+        }
+
+        public static void UpdateAfter()
         {
             lastPos = currentPos;
             lastPress = currentPress;
-            currentPos = new Vector2(Mouse.GetState().X, Mouse.GetState().Y);
-            currentPress = Mouse.GetState().LeftButton == ButtonState.Pressed;
         }
     }
 }

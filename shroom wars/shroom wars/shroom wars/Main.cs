@@ -30,6 +30,7 @@ namespace shroom_wars
         public static Texture2D villageTexture;
         public static Texture2D dirtTexture;
         public static Texture2D circleTexture;
+        public static Texture2D mapTexture;
 
         public static SpriteFont[] fonts = new SpriteFont[4];
 
@@ -68,22 +69,23 @@ namespace shroom_wars
             villageTexture = Content.Load<Texture2D>("spr/village");
             guyTexture = Content.Load<Texture2D>("spr/guy");
             circleTexture = Content.Load<Texture2D>("ui/circle");
+            mapTexture = Content.Load<Texture2D>("ui/map");
 
             for (int i = 0; i < fonts.Length; i++)
                 fonts[i] = Content.Load<SpriteFont>("fon/font" + i);
 
             #region maps
             List<Village> v1 = new List<Village>();
-            v1.Add(new Village(new Vector2(100, 100), 1, Color.Red, 10));
+            v1.Add(new Village(new Vector2(300, 100), 1, Color.Red, 10));
             v1.Add(new Village(new Vector2(300, 100), 1, Color.Blue, 10));
-            Map.maps.Add(new Map(new Vector2(100, 100), v1));
+            Map.maps.Add(new Map(new Vector2(256, 200), v1));
 
             List<Village> v2 = new List<Village>();
             v2.Add(new Village(new Vector2(50, 100), 1, Color.Red, 10));
             v2.Add(new Village(new Vector2(150, 100), 1, Color.Red, 10));
             v2.Add(new Village(new Vector2(300, 100), 1, Color.Blue, 10));
 
-            Map.maps.Add(new Map(new Vector2(100, 100), v2));
+            Map.maps.Add(new Map(new Vector2(340, 500), v2));
             #endregion
         }
 
@@ -94,7 +96,7 @@ namespace shroom_wars
 
         protected override void Update(GameTime gameTime)
         {
-            Input.Update();
+            Input.UpdateBefore();
             switch (gameState)
             {
                 case gameState.mainMenu:
@@ -107,7 +109,7 @@ namespace shroom_wars
                     }
                 case gameState.storyMap:
                     {
-                        Map.drawMaps(spriteBatch);
+                        Map.Update(gameTime);
                         break;
                     }
                 case gameState.inGame:
@@ -117,6 +119,7 @@ namespace shroom_wars
                         break;
                     }
             }
+            Input.UpdateAfter();
             base.Update(gameTime);
         }
 
@@ -134,9 +137,7 @@ namespace shroom_wars
                     }
                 case gameState.storyMap:
                     {
-                        spriteBatch.End();
                         Map.drawMaps(spriteBatch);
-                        spriteBatch.Begin();
                         break;
                     }
                 case gameState.inGame:

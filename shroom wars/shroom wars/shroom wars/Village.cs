@@ -23,7 +23,6 @@ namespace shroom_wars
             this.productionRate = 1f / level * 3;
             this.color = col;
             this.guys = guys;
-            villages.Add(this);
         }
 
         public void sendPeople(Village dest)
