@@ -1,2 +1,6 @@
 c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom warsContent\obj\x86\Debug\shroom warsContent.contentprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom warsContent\obj\x86\Debug\shroom warsContent.contentprojResolveAssemblyReference.cache
+=======
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\shroom wars\shroom wars\shroom warsContent\obj\x86\Debug\shroom warsContent.contentprojResolveAssemblyReference.cache
+>>>>>>> 285548357655c7b0f438b0daf8674fccf9fb96c3

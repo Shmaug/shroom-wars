@@ -9,6 +9,7 @@ c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shr
 c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\guy.xnb
 c:\users\kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\dirt.xnb
 C:\Users\Kevin\documents\visual studio 2010\Projects\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\font0.xnb
+<<<<<<< HEAD
 C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\tex\grass.xnb
 C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\spr\village.xnb
 C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\spr\guy.xnb
@@ -24,3 +25,16 @@ C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars
 C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\obj\x86\Debug\shroom wars.exe
 C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\obj\x86\Debug\shroom wars.pdb
+=======
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\grass.xnb
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\village.xnb
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\guy.xnb
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\dirt.xnb
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\font0.xnb
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\shroom wars.exe
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\shroom wars.pdb
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\shroom wars\shroom wars\shroom wars\obj\x86\Debug\shroom wars.csprojResolveAssemblyReference.cache
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\shroom wars\shroom wars\shroom wars\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\shroom wars\shroom wars\shroom wars\obj\x86\Debug\shroom wars.exe
+C:\Users\Jay\Documents\GitHub\Shroom-Wars\shroom wars\shroom wars\shroom wars\obj\x86\Debug\shroom wars.pdb
+>>>>>>> 285548357655c7b0f438b0daf8674fccf9fb96c3

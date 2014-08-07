@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shroom Wars", "Shroom Wars\Shroom Wars\Shroom Wars.csproj", "{08029CF2-ACE4-4F21-9C57-92117FF172DA}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Shroom WarsContent", "Shroom Wars\Shroom WarsContent\Shroom WarsContent.contentproj", "{1CA860AF-B518-42F4-BC7E-7978D6497A04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08029CF2-ACE4-4F21-9C57-92117FF172DA}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{08029CF2-ACE4-4F21-9C57-92117FF172DA}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{08029CF2-ACE4-4F21-9C57-92117FF172DA}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{08029CF2-ACE4-4F21-9C57-92117FF172DA}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{08029CF2-ACE4-4F21-9C57-92117FF172DA}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{08029CF2-ACE4-4F21-9C57-92117FF172DA}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{1CA860AF-B518-42F4-BC7E-7978D6497A04}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{1CA860AF-B518-42F4-BC7E-7978D6497A04}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
