@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\tex\grass.xnb</Output>
-      <Time>2014-07-28T17:22:26-07:00</Time>
+      <Time>2014-08-07T20:21:31.2486241-07:00</Time>
     </Item>
     <Item>
       <Source>spr\village.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\spr\village.xnb</Output>
-      <Time>2014-07-28T18:04:10-07:00</Time>
+      <Time>2014-08-06T23:29:29.8022801-07:00</Time>
     </Item>
     <Item>
       <Source>spr\guy.png</Source>
@@ -90,6 +90,15 @@
       <Options>None</Options>
       <Output>C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\ui\map.xnb</Output>
       <Time>2014-08-06T23:21:08.4936436-07:00</Time>
+    </Item>
+    <Item>
+      <Source>ui\play.png</Source>
+      <Name>ui\play</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\ui\play.xnb</Output>
+      <Time>2014-08-11T10:00:25.5181671-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

@@ -31,6 +31,7 @@ namespace shroom_wars
         public static Texture2D dirtTexture;
         public static Texture2D circleTexture;
         public static Texture2D mapTexture;
+        public static Texture2D playBtnTexture;
 
         public static SpriteFont[] fonts = new SpriteFont[4];
 
@@ -70,6 +71,7 @@ namespace shroom_wars
             guyTexture = Content.Load<Texture2D>("spr/guy");
             circleTexture = Content.Load<Texture2D>("ui/circle");
             mapTexture = Content.Load<Texture2D>("ui/map");
+            playBtnTexture = Content.Load<Texture2D>("ui/play");
 
             for (int i = 0; i < fonts.Length; i++)
                 fonts[i] = Content.Load<SpriteFont>("fon/font" + i);
@@ -78,14 +80,14 @@ namespace shroom_wars
             List<Village> v1 = new List<Village>();
             v1.Add(new Village(new Vector2(300, 100), 1, Color.Red, 10));
             v1.Add(new Village(new Vector2(300, 100), 1, Color.Blue, 10));
-            Map.maps.Add(new Map(new Vector2(256, 200), v1));
+            Map.maps.Add(new Map(new Vector2(256, 200), v1, "Tutorial"));
 
             List<Village> v2 = new List<Village>();
             v2.Add(new Village(new Vector2(50, 100), 1, Color.Red, 10));
             v2.Add(new Village(new Vector2(150, 100), 1, Color.Red, 10));
             v2.Add(new Village(new Vector2(300, 100), 1, Color.Blue, 10));
 
-            Map.maps.Add(new Map(new Vector2(340, 500), v2));
+            Map.maps.Add(new Map(new Vector2(340, 500), v2, "First Base"));
             #endregion
         }
 
@@ -143,13 +145,9 @@ namespace shroom_wars
                 case gameState.inGame:
                     {
                         // draw ground
-                        for (int x = 0; x < screenWidth; x += grassTexture.Width)
-                        {
-                            for (int y = 0; y < screenWidth; y += grassTexture.Width)
-                            {
-                                spriteBatch.Draw(grassTexture, new Rectangle(x, y, 64, 64), null, Color.White);
-                            }
-                        }
+                        for (int x = (int)(Math.Floor(Map.cameraPosition.X / Main.grassTexture.Width) * Main.grassTexture.Width - Map.cameraPosition.X); x < Main.screenWidth; x += Main.grassTexture.Width)
+                            for (int y = (int)(Math.Floor(Map.cameraPosition.Y / Main.grassTexture.Height) * Main.grassTexture.Height - Map.cameraPosition.Y); y < Main.screenHeight; y += Main.grassTexture.Height)
+                                spriteBatch.Draw(Main.grassTexture, new Rectangle(x, y, Main.grassTexture.Width, Main.grassTexture.Height), null, Color.White);
                         spriteBatch.End();
 
                         // draw game objects in order of bottom to top

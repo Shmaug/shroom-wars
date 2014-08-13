@@ -67,7 +67,7 @@ namespace shroom_wars
             foreach (Guy g in guys)
             {
                 // I hope I don't have to explain this
-                spriteBatch.Draw(Main.guyTexture, g.pos, null, g.color, 0f, new Vector2(Main.guyTexture.Width * .5f, Main.guyTexture.Height), 1f, SpriteEffects.None, (Main.screenHeight - g.pos.Y) / (float)Main.screenHeight);
+                spriteBatch.Draw(Main.guyTexture, g.pos - Map.cameraPosition, null, g.color, 0f, new Vector2(Main.guyTexture.Width * .5f, Main.guyTexture.Height), 1f, SpriteEffects.None, (Main.screenHeight - g.pos.Y) / (float)Main.screenHeight);
             }
         }
     }

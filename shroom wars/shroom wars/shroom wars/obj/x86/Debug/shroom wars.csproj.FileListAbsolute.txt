@@ -14,3 +14,4 @@ C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars
 C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\obj\x86\Debug\shroom wars.exe
 C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\obj\x86\Debug\shroom wars.pdb
 C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\ui\map.xnb
+C:\Users\Trevor\Documents\GitHub\shroom-wars\shroom wars\shroom wars\shroom wars\bin\x86\Debug\Content\ui\play.xnb

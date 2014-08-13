@@ -63,15 +63,15 @@ namespace shroom_wars
         {
             foreach (Village v in villages)
             {
-                spriteBatch.Draw(Main.villageTexture, v.position, null, v.color, 0f, new Vector2(Main.villageTexture.Width * .5f, Main.villageTexture.Height), 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y) / (float)Main.screenHeight);
-                spriteBatch.Draw(Main.dirtTexture, v.position, null, Color.White, 0f, new Vector2(Main.dirtTexture.Width, Main.dirtTexture.Height) * .5f, 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y + 1f) / (float)Main.screenHeight);
+                spriteBatch.Draw(Main.villageTexture, v.position - Map.cameraPosition, null, v.color, 0f, new Vector2(Main.villageTexture.Width * .5f, Main.villageTexture.Height), 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y) / (float)Main.screenHeight);
+                spriteBatch.Draw(Main.dirtTexture, v.position - Map.cameraPosition, null, Color.White, 0f, new Vector2(Main.dirtTexture.Width, Main.dirtTexture.Height) * .5f, 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y + 1f) / (float)Main.screenHeight);
                 Vector2 o = Main.fonts[0].MeasureString(v.guys.ToString()) * .5f;
                 //outline
-                spriteBatch.DrawString(Main.fonts[0], v.guys.ToString(), v.position + new Vector2(2, -Main.villageTexture.Height), Color.Black, 0f, o, 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y) / (float)Main.screenHeight);
-                spriteBatch.DrawString(Main.fonts[0], v.guys.ToString(), v.position + new Vector2(-2, -Main.villageTexture.Height), Color.Black, 0f, o, 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y) / (float)Main.screenHeight);
-                spriteBatch.DrawString(Main.fonts[0], v.guys.ToString(), v.position + new Vector2(0, -Main.villageTexture.Height + 2), Color.Black, 0f, o, 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y) / (float)Main.screenHeight);
-                spriteBatch.DrawString(Main.fonts[0], v.guys.ToString(), v.position + new Vector2(0, -Main.villageTexture.Height - 2), Color.Black, 0f, o, 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y) / (float)Main.screenHeight);
-                spriteBatch.DrawString(Main.fonts[0], v.guys.ToString(), v.position + new Vector2(0, -Main.villageTexture.Height), Color.White, 0f, o, 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y - 1f) / (float)Main.screenHeight);
+                spriteBatch.DrawString(Main.fonts[0], v.guys.ToString(), v.position - Map.cameraPosition + new Vector2(2, -Main.villageTexture.Height), Color.Black, 0f, o, 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y) / (float)Main.screenHeight);
+                spriteBatch.DrawString(Main.fonts[0], v.guys.ToString(), v.position - Map.cameraPosition + new Vector2(-2, -Main.villageTexture.Height), Color.Black, 0f, o, 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y) / (float)Main.screenHeight);
+                spriteBatch.DrawString(Main.fonts[0], v.guys.ToString(), v.position - Map.cameraPosition + new Vector2(0, -Main.villageTexture.Height + 2), Color.Black, 0f, o, 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y) / (float)Main.screenHeight);
+                spriteBatch.DrawString(Main.fonts[0], v.guys.ToString(), v.position - Map.cameraPosition + new Vector2(0, -Main.villageTexture.Height - 2), Color.Black, 0f, o, 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y) / (float)Main.screenHeight);
+                spriteBatch.DrawString(Main.fonts[0], v.guys.ToString(), v.position - Map.cameraPosition + new Vector2(0, -Main.villageTexture.Height), Color.White, 0f, o, 1f, SpriteEffects.None, (Main.screenHeight - v.position.Y - 1f) / (float)Main.screenHeight);
             }
         }
     }
